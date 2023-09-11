@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <title>Задание 2</title>
+  </head>
+  
+<body>
+    <header>
+        <img id="logo" src="logo.jpg" alt="Наш лого" />
+        <nav><a href="1.html">Ссылка 1</a> <a href="2.html">Ссылка 2</a> <a href="3.html">Ссылка 3</a> </nav>
+        <h1>Задание 2</h1>
+      </header>
+<br>
+<div class="content">
+<h2>Ссылки</h2>
+<ul>
+    <li><a href="http://kubsu.ru">Главная страница сайта КубГУ</a></li>
+    <li><a href="https://kubsu.ru" id = "second">Главная страница сайта КубГУ (https)</a></li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0"><img src="image.jpg" alt="cat"></a></li>
+    <li><a href="news.html">Сокращенная ссылка на внутреннююю страницу</a></li>
+    <li><a href="index.html">Сокращенная ссылка на главную страницу</a></li>
+    <li><a href="#second">Фрагмент страницы</a></li>
+    <li><a href="https://shikimori.me?x=1&y=2&z=3">Ссылка с параметрами</a></li>
+    <li><a href="https://shikimori.me?id=1">Ссылка с параметром id</a></li>
+    <li><a href="./news.html">Относительная ссылка на страницу в текущем каталоге</a></li>
+    <li><a href="../index.html">Относительная ссылка на страницу в каталоге выше</a></li>
+    <li><a href="../../index.html">Относительная ссылка на страницу в каталоге на 2 уровня выше</a></li>
+    <li>Для того, чтобы быть в курсе всех свежих новостей, читайте наш новый <a href="news.html">раздел</a> на сайте</li>
+    <li><a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D1%88%D0%BA%D0%B0#Генетика_кошки">Фрагмент сторонней страницы</a></li>
+    <li><map name="primary">
+        <area shape="rect" coords="25,25,100,100" href="rectangle.html" alt="прямоугольник">
+        <area shape="circle" coords="275,75,75" href="circle.html" alt="круг">
+        </map>
+        <img usemap="#primary" src = "cat.jpg" alt="cat"></li>
+
+    <li><a href="">Пустой href</a></li>
+    <li><a>Без href</a></li>
+    <li><a href="https://google.com" rel="nofollow">Запрещено переходить поисковикам</a></li>
+    <li><a href="https://vk.com" rel="nofollow"><!--noindex-->Не будет индексироваться<!--/noindex--></a>
+     </li>
+    <li><ol>
+        <li><a href="https://github.com/" title="Github">Первая ссылка</a></li>
+        <li><a href="https://kinopoisk.ru" title="Кинопоиск">Вторая ссылка</a></li>
+        <li><a href="https://tinkoff.ru" title="Тинькофф">Третья ссылка</a></li>
+    </ol></li>
+    <li><a href="ftp://user:password@example.com/myfile.zip">Файл на сервере FTP с авторизацией</a></li>
+</ul>
+<h2>Таблица</h2>
+<table>
+    <tr>
+      <th>Колонка 1</th>
+      <th>Колонка 2</th>
+      <th>Колонка 3</th>
+      <th>Колонка 4</th>
+    </tr>
+    <tr>
+      <td colspan="2">Ячейка 11 объединенная с 12</td>
+      <td>Ячейка 13</td>
+      <td>Ячейка 14</td>
+    </tr>
+    <tr>
+      <td>Ячейка 21</td>
+      <td>Ячейка 22</td>
+      <td>Ячейка 23</td>
+      <td>Ячейка 24</td>
+    </tr>
+    <tr>
+        <td>Ячейка 31</td>
+        <td>Ячейка 32</td>
+        <td>Ячейка 33</td>
+        <td>Ячейка 34</td>
+      </tr>
+      <tr>
+        <td>Ячейка 41</td>
+        <td>Ячейка 42</td>
+        <td>Ячейка 43</td>
+        <td>Ячейка 44</td>
+      </tr>
+      <tr>
+        <td>Ячейка 51</td>
+        <td>Ячейка 52</td>
+        <td>Ячейка 53</td>
+        <td>Ячейка 54</td>
+      </tr>
+      <tr>
+        <td>Ячейка 61</td>
+        <td>Ячейка 62</td>
+        <td>Ячейка 63</td>
+        <td>Ячейка 64</td>
+      </tr>
+  </table>
+<h2>Форма</h2>
+<form>
+      <label>
+        ФИО:<br>
+        <input name="fio">
+      </label><br>
+      <label>
+       Номер телефона :<br>
+        <input name="telephone" type="tel">
+      </label><br>
+      <label>
+        Email:<br>
+        <input name="field-email" type="email">
+      </label><br>
+
+      <label>
+        Дата рожедния:<br>
+        <input name="field-date"
+          type="date">
+      </label><br>
+
+      <label>Пол:<br><input type="radio" value="m" 
+        name="radio-group-1">
+        муж</label>
+      <label><input type="radio" value="f"
+        name="radio-group-1">
+        жен</label><br>
+
+        <label>
+            Любимый язык программирования:
+            <br>
+            <select name="field-name-4[]"
+              multiple="multiple">
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="JavaScript">JavaScript</option>
+              <option value="PHP">PHP</option>
+              <option value="Python">Python</option>
+              <option value="Pascal">Pascal</option>
+              <option value="C">C</option>
+              <option value="C++">C++</option>
+              <option value="Java">Java</option>
+              <option value="Haskel">Haskel</option>
+              <option value="Clojure">Clojure</option>
+              <option value="Prolog">Prolog</option>
+              <option value="Scala">Scala</option>
+            </select>
+          </label><br> 
+
+      <label>
+        Биография:<br>
+        <textarea name="field-name-2"></textarea>
+      </label><br>
+
+      <label><input type="checkbox"
+        name="check-1"> С контрактом ознакомлен</label><br>
+     
+      Кнопка "сохранить":
+      <input type="submit" value="Сохранить">
+    </form>
+</div>
+    <footer>(с) Тоня Поспелова</footer>
+</body>
