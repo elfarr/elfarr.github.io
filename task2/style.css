@@ -9,7 +9,9 @@
 
     background-color: #B4DAF2;
   }
-
+#flower {
+  width:300px;
+}
 #logo {
     float:left; margin:10px; width:100px; height:100px;
 }
