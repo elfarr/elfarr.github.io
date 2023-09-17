@@ -17,19 +17,26 @@
 }
 
 header{
-    width:200%; background-color:#ccc; padding: 10px; height:120px;
+    width:100%; background-color:#E6E6FA; padding: 10px; height:120px;
 }
 
 footer{
-    width:100%; background-color:#ccc; padding: 10px; margin: 10px;
+    width:100%; background-color:#ccc; padding: 10px; margin: 10px; background:  #E6E6FA;
 }
-div.content {
+div {
+  max-width:960px; margin: 0 auto ; margin-top:20px; padding:10px;  
+
+}
+.content, .form {
    
-    max-width:960px; margin: 0 auto ; margin-top:20px; padding:10px; 
+   background-color: #FFF5EE;
 }
 nav {
-  background-color:#ddd; padding:10px;
+  background-color:#FFF5EE; padding:10px;
 }
 table {
   text-align: center;
+}
+.table {
+ background-color: #E6E6FA ;
 }
