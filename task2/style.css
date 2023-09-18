@@ -32,7 +32,7 @@ div {
    background-color: #FFF5EE;
 }
 nav {
-  background-color:#FFF5EE; padding:10px;
+  background-color:#FFF5EE; padding:10px;  text-align: left;
 }
 table {
   text-align: center;
