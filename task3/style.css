@@ -1,4 +1,4 @@
-
+  
   tr:nth-child(odd) {
 
     background-color: #C9E4F6;
@@ -9,7 +9,7 @@
 
     background-color: #B4DAF2;
   }
-#flower {
+#im {
   width:300px;
 }
 #logo {
@@ -29,25 +29,32 @@ footer{
 div {
   max-width:960px; margin: 0 auto ; margin-top:20px; padding:10px;  
 }
-.content, .form {
-   
+.content{ 
+   order: 2;
    background-color: #FFF5EE;
 }
+.form {
+  background-color: #FFF5EE; }
 nav {
-  background-color: #FFF5EE; padding:10px;  margin: 10px; text-align: right; 
+  display: flex;
+    flex-direction: column;
+    text-align: left;
+  background-color: #FFF5EE; padding:10px;  margin: 10px; text-align: right;
 }
 table {
   text-align: center;
+  order: 1;
 }
 .table {
  background-color: #E6E6FA ;
 }
 body {  background-color: #FFE4E1 ; }
-
-@media screen and (max-width: 800px) {
+@media screen and (min-width: 480px) {
   nav {
-    display: flex;
-    flex-direction: column;
+    flex-direction: row;
+  }
+  nav a {
+  margin: 2px;
   
   }
 }
