@@ -12,49 +12,107 @@
 #im {
   width:300px;
 }
-#logo {
-    float:left; margin:10px; width:100px; height:100px;
-}
 
-header{
-    background-color:#E6E6FA; padding: 10px; height:120px; flex-direction: row;
+
+#logo {
+    height:100px;
+    float: left;
 }
-h1 {
-  text-align: center;
-  margin-top: 40px;
+.main {
+  display: flex;
+  flex-direction: column;
+  max-width: 960px;
+  margin:auto;
 }
+.header{
+    background-color:#E6E6FA; display: flex; flex-direction: column;
+  }
+
+.contain { 
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  } 
+
 footer{
+  order: 2;
  margin-top: 20px;  padding: 10px;  height: 25px; background:  #E6E6FA; 
 }
-div {
-  max-width:960px; margin: 0 auto ; margin-top:20px; padding:10px;  
+.head-wrapper {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
 }
 .content{ 
-   order: 2;
+  
    background-color: #FFF5EE;
+    max-width: 960px;
+    margin: 20px;
+    padding: 10px;
+}
+
+.links {
+  display: flex;
+  gap: 5px;
+ 
+  list-style-type: none;
+  flex-direction: column;
+  margin-right: 10px;
+  padding: 10px;
 }
 .form {
-  background-color: #FFF5EE; }
-nav {
   display: flex;
-    flex-direction: column;
-    text-align: left;
-  background-color: #FFF5EE; padding:10px;  margin: 10px; text-align: right;
+  flex-direction: column;
+  order: 2;
+  background-color: #FFF5EE;
+  max-width: 960px; 
+  margin: 20px;
+  padding: 10px;}
+
+.table {
+  display: flex;
+  flex-direction: column;
+  order: -1;
+  max-width: 960px;
+  padding: 10px;
+  
 }
-table {
-  text-align: center;
-  order: 1;
+table {text-align: center;}
+h1 {
+  margin-left: 20px;
 }
 .table {
+  max-width: 960px;
+  margin: 20px;
  background-color: #E6E6FA ;
 }
-body {  background-color: #FFE4E1 ; }
-@media screen and (min-width: 480px) {
-  nav {
+
+body { 
+ 
+ margin: 0; background-color: #FFE4E1 ; }
+
+@media screen and (min-width: 768px) {
+  .header, .contain {
     flex-direction: row;
+    justify-content: space-between;
   }
-  nav a {
-  margin: 2px;
-  
+  .links {
+    flex-direction: row;
+    padding: 10px;
+    background-color: #FFF5EE;
+}
+.head-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.table {order: 0;}
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    margin: 10px;
+    background-color: #FFF5EE ;
   }
 }
+
