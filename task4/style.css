@@ -28,24 +28,13 @@ order: 2;
 margin-top: 20px;  padding: 10px;  height: 40px; background:  #E6E6FA; 
 }
 
-.links {
+#links {
   background-color: #FFF5EE;
-display: flex;
-gap: 5px;
 list-style-type: none;
-flex-direction: column;
-padding: 10px;
+padding: 15px;
 }
-
-
 table {text-align: center;}
 #logo { height:100px; width: 100px;}
-
 body { 
 margin: 0;  }
 
-@media screen and (min-width: 768px) {
-.links {
-  flex-direction: row;
-}
-}
