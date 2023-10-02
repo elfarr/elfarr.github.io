@@ -1,1 +1,69 @@
 
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Задание 5</title>
+  </head>
+  
+<body style="background-color: #FFE4E1 ;">
+
+    <div class="container-fluid">
+
+    <div class="row justify-content-between" style="background-color:#E6E6FA;">
+
+        <div class="col-xs-12 m-2 col-md-6 order-md-0 form-inline">
+  
+          <img id="logo" src="../task2/logo.jpg" alt="Наш лого">    
+
+          <h1>Задание 5</h1>
+      
+        </div>
+       
+      </div>
+    </div>
+ <div class="container">   
+<div class="row">
+  <div class="col-xs-12 col-md-12 order-md-0 order-sm-1 order-1 m-2 p-2" style=" background-color: #FFF5EE;" >
+  <h2>Калькулятор стоимости заказа</h2>
+  
+<script>
+
+    function click1() {
+      let f1 = document.getElementsByName("field1");
+      let f2 = document.getElementsByName("field2");
+      let r = document.getElementById("result");
+      r.innerHTML = f1[0].value + f2[0].value;
+      let s = document.getElementsByName("select1");
+      console.log(s[0].value);
+      return false;
+    }
+    
+    </script>  
+    
+    <div id="result"></div>
+    <form>
+      <input name="field1" type="text">
+      <input name="field2" type="text">
+      <select name="select1">
+        <option value="v1">Вариант 1</option>
+        <option value="v2">Вариант 2</option>
+      </select>
+      <button id="button1" onclick="return click1();">OK</button>
+      
+    </form>
+    
+  
+</div>
+
+    <footer>(с) Тоня Поспелова 2023г.</footer>
+</body>
