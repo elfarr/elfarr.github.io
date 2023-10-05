@@ -24,8 +24,8 @@ width:300px;
 }
 
 footer{
-order: 2;
-margin-top: 20px;  padding: 10px;  height: 40px; background:  #E6E6FA; 
+  position: absolute;
+  bottom: 0;  padding: 10px; width: 100%;  height: 40px; background:  #E6E6FA;
 }
 
 #links {
@@ -33,7 +33,8 @@ margin-top: 20px;  padding: 10px;  height: 40px; background:  #E6E6FA;
 list-style-type: none;
 padding: 15px;
 }
-table {text-align: center;}
+#result {font-size: 25px; padding: 10px; padding-bottom: 0px;}
+table {text-align: center; 	 width: 50%;}
 #logo { height:100px; width: 100px;}
 body { 
 margin: 0;  }
