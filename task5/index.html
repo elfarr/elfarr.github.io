@@ -39,7 +39,7 @@
 
     <form>
       Введите количество товаров и выберите тип: <br> 
-      <input name="field" type="text">
+      <input name="field" type="text" placeholder=0>
   
       <select name="select1">
         <option value=100>Кружка</option>
@@ -50,14 +50,21 @@
       </select>
 
         <script>
-          function onClick(event) {
-          let f = document.getElementsByName("field");
-          let r = document.getElementById("result");
-         
-          let s = document.getElementsByName("select1");
-          r.innerHTML = "<p> Стоимость заказа: " + f[0].value*s[0].value + " рублей</p>";
-          return false;
-          }
+          function onClick() {
+            let f = document.getElementsByName("field");
+            let r = document.getElementById("result");
+            let s = document.getElementsByName("select1");
+            let valid = /^[1-9]\d*$/.test(f[0].value);
+            if (!valid) {
+              alert("Значение некорректно!");
+              r.innerHTML = "";
+              f[0].value = "";
+              s.value = "";
+            return false;
+            }
+            r.innerHTML = "<p>Стоимость: " + f[0].value * s[0].value + " руб</p>";
+            return false;
+}
         </script> 
       <button id="button1" onclick="return onClick();">Рассчитать стоимость</button>
     </form>
