@@ -24,8 +24,7 @@ width:300px;
 }
 
 footer{
-  position: absolute;
-  bottom: 0;  padding: 10px; width: 100%;  height: 40px; background:  #E6E6FA;
+ padding: 10px; width: 100%;  background:  #E6E6FA;
 }
 
 #links {
