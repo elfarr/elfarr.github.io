@@ -31,34 +31,37 @@
        
       </div>
     </div>
- <div class="container">   
+ <div class="container d-flex  justify-content-around">   
 <div class="row">
   <div class="col-xs-12 col-md-12 order-md-0 order-sm-1 order-1 m-2 p-2" style=" background-color: #FFF5EE;" >
-  <h2>Калькулятр стоимости заказа</h2>
-    <form>
-      Введите количество товаров и выберите тип: <br> 
-      <input name="field" type="text" placeholder=0>
-      <div class="myradios" id="myradios">
-        <label><input type="radio" name="1" value="cup">Кружка</label>
-        <label><input type="radio" name="1" value="pen">Ручка</label>
-        <label><input type="radio" name="1" value="pencil">Карандаш</label>
-  
+  <h2 >Калькулятор стоимости заказа</h2>
+    <form class="m-2" id="form">
+      Введите количество товаров и выберите тип: 
+      
+      <input class="m-2" id="field" type="text" placeholder=0>
+
+
+        <div class="m-3" id="myradios">
+          <label><input class="m-1"  type="radio" name="1" id="cup" checked>Кружка</label>
+          <label><input class="m-1"type="radio" name="1" id="pen">Ручка</label>
+          <label><input class="m-1" type="radio" name="1" id="pencil">Карандаш</label>
+          
+      
       </div>  
         
-      <select name="select1" style = "display: none;">
-        <option value=100>Кружка</option>
-        <option value=40>Ручка</option>
-        <option value=30>Карандаш</option>
-        <option value=45>Ластик</option>
-        <option value=50>Тетрадь</option>
+      <select id="select1">
+        <option value="shar">Шариковая</option>
+        <option value="gel">Гелевая</option>
+        <option value="erase">Стирающаяся</option>
+      
       </select>
-
-
-      <button id="button1">Рассчитать стоимость</button>
+      <div id="checkbox" >
+        <label><input type="checkbox" id="box">Механический</label>
+      </div>
     </form>
     <div id="result"> </div>
     <h3>Прайс-лист</h3>
-    <table class="table" style="width: 25%;">
+    <table class="table" style="width: 70%; align-content: center;">
       <tr>
         <th>Название</th>
         <th>Цена (руб.)</th>
@@ -68,20 +71,24 @@
         <td>100</td>
       </tr>
       <tr>
-        <td>Ручка</td>
-        <td>40</td>
+        <td>Ручка шариковая</td>
+        <td>50</td>
       </tr>
       <tr>
+          <td>Ручка гелевая</td>
+          <td>60</td>
+        </tr>
+        <tr>
+          <td>Ручка стирающаяся</td>
+          <td>140</td>
+        </tr>
+        <tr>
           <td>Карандаш</td>
           <td>30</td>
         </tr>
         <tr>
-          <td>Ластик</td>
-          <td>45</td>
-        </tr>
-        <tr>
-          <td>Тетрадь</td>
-          <td>50</td>
+          <td>Карандаш механический</td>
+          <td>240</td>
         </tr>
 
     </table>
