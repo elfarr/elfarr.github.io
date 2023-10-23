@@ -6,7 +6,7 @@ $(document).ready(function() {
           "style='width: 50px'  alt='2'>",
       prevArrow: "<img src='img/l.png' class='prev'"+
           "style='width: 50px; ' alt='1'>",
-       responsive: [
+      responsive: [
         {
           breakpoint: 1024,
           settings: {
@@ -14,10 +14,10 @@ $(document).ready(function() {
             infinite: true,
             slidesToScroll: 1,
             slidesToShow: 1
-          },
+          }
+        }
+      ],
       slidesToScroll: 1,
       slidesToShow: 3
-        }
-      ]
     });
   });
