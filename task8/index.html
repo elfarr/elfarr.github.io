@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+   
+    
+    <link rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <title>Задание 8</title>
+    
+  </head>
+  
+<body style="background-color: #FFE4E1 ;">
+  <div class="container-fluid">
+    <div class="row justify-content-between" style="background-color:#E6E6FA;">
+        <div class="col-xs-12 m-2 col-md-6 order-md-0 form-inline">
+          <img id="logo" src="../task2/logo.jpg" alt="Наш лого">    
+          <h1>Задание 8</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container-fluid">
+      <div class="row mt-5 justify-content-center">
+        <div class="container">
+          <div class="row">
+            <div class="col">
+              <div class="form-group hidden-modal">
+                <h1 class="mt-5">Обратная связь</h1>
+                <button class="close-modal">x</button>
+                <label>ФИО</label>
+                <input name="name" type="text" class="form-control">
+        
+                  <label>Телефон</label>
+                  <input type="number" class="form-control">
+               
+               
+                  <label>Организация</label>
+                  <input type="text" class="form-control">
+                  
+                    <label>Сообщение</label>
+                    <input type="text" class="form-control">
+      
+         
+              <label>Email</label>
+              <input type="text" class="form-control">
+              <label>Сообщение:</label>
+              <textarea class="form-control"></textarea>
+              <label class="checkbox">
+                <input type="checkbox"> Согласие на обработку данных</label>
+              <button type="submit" class="btn btn-primary">Отправить</button>
+
+            </div>
+          </div>
+         
+        <form action="https://api.slapform.com/your@email.com" method="POST"></form>
+  </div> 
+  <button class="open-modal" onclick="togglePopup()">Записаться</button>
+</div>
+</body>
+</html>
