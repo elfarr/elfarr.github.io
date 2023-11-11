@@ -25,42 +25,55 @@
         </div>
       </div>
     </div>
-    <div class="container-fluid">
-      <div class="row mt-5 justify-content-center">
-        <div class="container">
-          <div class="row">
-            <div class="col">
-              <div class="form-group hidden-modal">
-                <h1 class="mt-5">Обратная связь</h1>
-                <button class="close-modal">x</button>
+    <div class="box" id="box">
+      <a class="button" id="open"  href="#popup1">Записаться</a>
+    </div>
+
+    
+    <div id="popup1" class="overlay">
+      
+      <div class="popup">
+      
+         <div class="form-group" id="form-group">
+          <a class="close" id="close">&times;</a>
+          <h3>Обратная связь</h3>
+
+          <form id="form" action="https://api.slapform.com/Yesuhuwqb" method="POST" enctype="multipart/form-data">
                 <label>ФИО</label>
-                <input name="name" type="text" class="form-control">
+                <input name="name" type="text" class="form-control" id="fio">
         
                   <label>Телефон</label>
-                  <input type="number" class="form-control">
+                  <input type="number" class="form-control" id="phone">
                
                
                   <label>Организация</label>
-                  <input type="text" class="form-control">
-                  
-                    <label>Сообщение</label>
-                    <input type="text" class="form-control">
-      
+                  <input type="text" class="form-control" id="org">
+                
          
               <label>Email</label>
-              <input type="text" class="form-control">
+              <input type="text" class="form-control" id="mail">
               <label>Сообщение:</label>
-              <textarea class="form-control"></textarea>
+              <textarea class="form-control" id="text"></textarea>
               <label class="checkbox">
-                <input type="checkbox"> Согласие на обработку данных</label>
-              <button type="submit" class="btn btn-primary">Отправить</button>
-
+                <input type="checkbox" id="agree"> Согласие на обработку данных</label>
+                <div><button type="submit" id="send" class="btn btn-primary">Отправить</button></div>
+        </form>
+        </div>
+      </div>
+    </div>
+     
+   
+        
             </div>
           </div>
-         
-        <form action="https://api.slapform.com/your@email.com" method="POST"></form>
+          </div>
   </div> 
-  <button class="open-modal" onclick="togglePopup()">Записаться</button>
+
 </div>
+<div id="successMessage" class="alert alert-success" role="alert" style="margin-left: 35%; margin-right: 25%; width: 40%; display: none; margin-top: 10px; transition: all 5s ease-in-out;">
+  <p>Форма успешно отправлена!</p>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/slapform@latest/dist/index.min.js"></script>
+<script src="js/main.js"></script>
 </body>
 </html>
