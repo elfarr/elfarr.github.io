@@ -36,12 +36,8 @@ padding: 10px;
   border-radius: 5px;
   width: 100%;
   position: relative;
-  /* transition: all 5s ease-in-out; */
+
 }
-/* #successMessage {
-  width: 80%;
-  height: 50px;
-} */
 
 .box {
   display: flex;
